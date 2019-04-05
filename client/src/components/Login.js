@@ -34,7 +34,7 @@ export default class Login extends Component {
       .post("/login", info)
       .then(res => {
         localStorage.setItem("token", res.data.token);
-        this.props.history.push("/users");
+        this.props.history.push("/jokes");
       })
       .catch(err => {
         console.error("LOGIN ERROR", err);

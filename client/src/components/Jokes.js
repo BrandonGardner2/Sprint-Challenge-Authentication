@@ -11,7 +11,7 @@ export default class Jokes extends Component {
       .get("/jokes")
       .then(res => {
         this.setState({
-          users: res.data
+          jokes: res.data
         });
       })
       .catch(err => {
